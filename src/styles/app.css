@@ -1,0 +1,108 @@
+@keyframes show {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  scrollbar-width: 7px;
+  scrollbar-color: #21252991 #21252912;
+}
+
+*::-webkit-scrollbar {
+  width: 7px;
+  height: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #21252912;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #21252991;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.drawerMenuItem {
+  background: #0000001f !important;
+}
+
+main {
+  position: relative;
+  flex-grow: 1;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+footer {
+  min-height: 55px;
+  background: #212529;
+}
+
+footer .container {
+  min-height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.footerText {
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.footerLinks {
+  width: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerLinks a {
+  color: white;
+}
+
+.footerLinks a:hover {
+  color: #ffffffc4;
+}
+
+@media (max-width: 1320px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 667px) {
+  .typographyMedia {
+    font-size: 22px !important;
+    margin-left: 10px !important;
+  }
+
+  .footerText {
+    font-size: 14px;
+  }
+
+  .footerLinks {
+    font-size: 15px;
+  }
+}

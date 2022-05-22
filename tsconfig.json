@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "strict": false,
+    "jsx": "react",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noImplicitAny": false,
+    "outDir": "./public/dist",
+    "preserveConstEnums": true,
+    "removeComments": false,
+    "target": "es6",
+    "sourceMap": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["./*"],
+
+      "@store/*": ["store/*"],
+      "@scenes/*": ["scenes/*"],
+      "@routes/*": ["routes/*"],
+
+      "@styles/*": ["styles/*"],
+
+      "@app/*": ["app/*"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules", "public/dist"]
+}
